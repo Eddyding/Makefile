@@ -1,0 +1,8 @@
+main: main.o
+	@echo 正在编译main模块
+	var=Hello,linux c programming
+	@echo $(var)
+	gcc main.c -o main
+.PHONY:clean
+clean:
+	rm *.o 

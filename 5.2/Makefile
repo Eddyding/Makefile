@@ -19,6 +19,7 @@ files.o : files.c defs.h buffer.h command.h
 util.o : util.c defs.h
 	gcc -c util.c
 
-clean: 
+clean:
+	touch \#a.txt 
 	rm all main.o kbd.o command.o display.o insert.o search.o files.o \
 util.o
